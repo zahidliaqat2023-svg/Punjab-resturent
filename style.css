@@ -48,7 +48,7 @@ nav a:hover, nav a.active {
 .hero {
     min-height: 60vh;
     max-height: 500px;
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('images/hero.png');
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('hero.png');
     background-size: cover;
     background-position: center;
     display: flex;
