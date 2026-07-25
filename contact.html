@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta name="description" content="Punjab Restaurant - Best Authentic Punjabi Food in Lahore">
+<meta name="keywords" content="punjabi food, butter chicken, karahi, restaurant lahore">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Punjab Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🍛 Punjab Restaurant</div>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navUl = document.querySelector('nav ul');
+    
+    hamburger.addEventListener('click', () => {
+        navUl.classList.toggle('active');
+    });
+</script>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>📍 Address:</strong> Main Market, Lahore, Pakistan</p>
+            <p><strong>📞 Phone:</strong> 0300-1234567</p>
+            <p><strong>🕒 Timing:</strong> 11:00 AM - 11:00 PM (Everyday)</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Punjab Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

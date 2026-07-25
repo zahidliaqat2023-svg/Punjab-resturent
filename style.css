@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background: #1a1a1a;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #22c55e;   /* Green */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover, nav a.active {
+    color: #22c55e;   /* Green */
+}
+
+/* Hero */
+.hero {
+    min-height: 60vh;
+    max-height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('images/hero.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 35px;
+    background: #22c55e;   /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background: #16a34a;
+}
+
+/* Other sections */
+.special {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+        font-size: 0.95rem;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Menu Page Styles */
+.menu-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.menu-container h1 {
+    text-align: center;
+    color: #22c55e;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.menu-section {
+    margin-bottom: 50px;
+}
+
+.menu-section h2 {
+    color: #1a1a1a;
+    border-bottom: 3px solid #22c55e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #22c55e;
+}
+/* Menu Item with Images */
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.menu-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #22c55e;
+}
+
+.menu-item div {
+    flex: 1;
+}
+/* About Page */
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.about-container h1 {
+    text-align: center;
+    color: #22c55e;
+    margin-bottom: 30px;
+}
+
+.about-container h2 {
+    color: #1a1a1a;
+    margin: 30px 0 15px 0;
+    border-bottom: 2px solid #22c55e;
+    padding-bottom: 8px;
+}
+
+.about-container ul {
+    padding-left: 20px;
+}
+
+.about-container li {
+    margin: 12px 0;
+}
+/* Contact Page */
+.contact-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #22c55e;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Mobile Navbar - Column under Hamburger Icon */
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        padding: 1rem 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.8rem;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        z-index: 110;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;                 /* Hamburger ke bilkul neeche */
+        right: 5%;
+        width: 160px;
+        background: #1a1a1a;
+        padding: 8px 0;
+        border-radius: 8px;
+        box-shadow: 0 6px 15px white;
+        z-index: 100;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}

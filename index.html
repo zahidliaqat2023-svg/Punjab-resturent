@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta name="description" content="Punjab Restaurant - Best Authentic Punjabi Food in Lahore">
+<meta name="keywords" content="punjabi food, butter chicken, karahi, restaurant lahore">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Punjab Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">🍛
+      Punjab Restaurant</div>
+       <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+                 <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navUl = document.querySelector('nav ul');
+    
+    hamburger.addEventListener('click', () => {
+        navUl.classList.toggle('active');
+    });
+</script>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <h1>Welcome to Punjab Restaurant</h1>
+        <p>Authentic Punjabi Food • Made with Love ❤️</p>
+        <a href="menu.html" class="btn">Menu Dekhein</a>
+    </header>
+
+    <section class="special">
+        <h2>Today's Special</h2>
+        <p>Butter Chicken, Sarson da Saag, aur Fresh Tandoori Roti</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Punjab Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

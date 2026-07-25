@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta name="description" content="Punjab Restaurant - Best Authentic Punjabi Food in Lahore">
+<meta name="keywords" content="punjabi food, butter chicken, karahi, restaurant lahore">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Punjab Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🍛 Punjab Restaurant</div>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+         <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navUl = document.querySelector('nav ul');
+    
+    hamburger.addEventListener('click', () => {
+        navUl.classList.toggle('active');
+    });
+</script>
+    </nav>
+
+    <div class="menu-container">
+        <h1>Our Delicious Menu</h1>
+
+        <section class="menu-section">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <img src="images/chicken-tikka.png" alt="Chicken Tikka">
+                <div>
+                    <h3>Chicken Tikka</h3>
+                    <p>Marinated chicken grilled in tandoor</p>
+                </div>
+                <p class="price">Rs. 450</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Main Course</h2>
+            <div class="menu-item">
+                <img src="images/butter-chicken.png" alt="Butter Chicken">
+                <div>
+                    <h3>Butter Chicken</h3>
+                    <p>Creamy tomato gravy with tender chicken</p>
+                </div>
+                <p class="price">Rs. 650</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/mutton-karahi.png" alt="Mutton Karahi">
+                <div>
+                    <h3>Mutton Karahi</h3>
+                    <p>Traditional spicy mutton karahi</p>
+                </div>
+                <p class="price">Rs. 850</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Breads</h2>
+            <div class="menu-item">
+                <img src="images/naan.png" alt="Butter Naan">
+                <div>
+                    <h3>Butter Naan</h3>
+                    <p>Fresh from tandoor</p>
+                </div>
+                <p class="price">Rs. 80</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Punjab Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
